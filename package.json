@@ -1,0 +1,21 @@
+{
+  "name": "fcm-messaging",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "angular": "^1.6.2",
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "fcm-node": "^1.0.16",
+    "firebase": "^3.6.9",
+    "jade": "~1.11.0",
+    "jquery": "^3.1.1",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.2"
+  }
+}

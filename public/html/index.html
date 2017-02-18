@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<script src="/front_dependency/angular/angular.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+<script src="/javascripts/fcm.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<link rel="manifest" href="/manifest.json">
+<body> 
+
+		<div ng-app="myapp" ng-controller="controller" > 
+
+			<ul>
+  
+  				<li ng-repeat="x in messages">
+                	{{ x }}
+  				</li>
+			</ul>
+            
+         
+			<div >
+
+				<input ng-model = "mes" > 
+				<input id="name"> 
+
+				<br> 
+
+				<button ng-click= "onClick()" > Send </button> 
+				<button onclick="sendToken()"> Token </button>
+
+			</div>
+
+	</div>
+
+
+	
+
+</body>
+
+<script src="/javascripts/controllers.js"></script>
+
+   <!-- <script >
+
+var app = angular.module("myapp",[]);
+
+
+app.controller('controller',function($scope){
+
+	$scope.messages = ["hello","How are ya??"];
+
+});
+
+
+
+
+</script> -->
+
+</html>
